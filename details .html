@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>依谷网-专注于绿色生态农产品宅生活电商</title>
+    <style type="text/css" rel="stylesheet">
+    </style>
+    <link rel="stylesheet" href="css/通用样式.css">
+    <link rel="stylesheet" href="css/头部样式.css">
+    <link rel="stylesheet" href="css/菜单样式.css">
+    <link rel="stylesheet" href="css/尾部样式.css">
+    <link rel="stylesheet" href="css/详情页.css">
+</head>
+<body>
+    <div class="header">
+        <div class="headerBox">
+            <div id="welcome">
+                <span>欢迎光临依谷网!</span><a href="#">&nbsp&nbsp&nbsp&nbsp&nbsp收藏依谷网</a>
+            </div>
+            <div class="user">
+                <a href="register.html" class="user_go">免费注册</a>|
+                <a href="login.html" class="user_go">登录</a>|
+                <a href="#" class="user_go">购物车</a>|
+                <span><img src="img/icon-erwm.png" alt="">关注购物网<img src="img/wx.jpg" alt=""></span>
+                <a href="#1" class="user_Licence">食品经营许可</a>|
+            </div>
+        </div>
+    </div>
+    <div class="headerBanner">
+        <div>
+            <ul>
+                <li style="display: block"><a href="#"><img src="img/头部广告/8ce5908e490f4ae4ae998f6a3b04bd89.jpg" alt=""></a></li>
+                <li><a href="#"><img src="img/头部广告/18d24115d93d4a79a390a3cada7bf126.jpg" alt=""></a></li>
+                <li><a href="#"><img src="img/头部广告/448f649fd6b24c808a55f83f6827861e.jpg" alt=""></a></li>
+                <li><a href="#"><img src="img/头部广告/c22f945c59f041608fce70eb51debb58.jpg" alt=""></a></li>
+                <li><a href="#"><img src="img/头部广告/d4647a2cd75643d0ace891ab1b2ab7b9.jpg" alt=""></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="searchTopBox">
+        <div>
+            <a href="main.html" id="logo"><img src="img/logo.png" alt=""></a>
+            <div class="searchBox">
+                <input type="text" id="search" placeholder="大闸蟹特惠">
+                <input type="button" value="搜索" id="searchButton">
+                <p><a href="#">买二赠一</a><a href="#">涌泉蜜桔</a><a href="#">新疆核桃</a><a href="#">云南野生苹果</a><a href="#">傻老大瓜子</a>
+                    <a href="#">网红果冻橙</a><a href="#">桂林干柿</a>
+                </p>
+            </div>
+            <a href="shopping.html">
+                <div class="shopBox">
+                    <span class="shopNum">0</span><img src="img/icon-shop.png" alt=""><span>我的购物车</span>
+                </div></a>
+            <div class="ewmBox">
+                <img src="img/erwm.jpg" alt="">
+                <span>扫码下单</span>
+            </div>
+        </div>
+    </div>
+    <div class="navBox">
+        <div>
+            <div class="leftSidebar">
+                <div class="leftSidebar_title">
+                    全部商品分类
+                </div>
+            </div>
+            <ul class="navMenu">
+                <li><a href="main.html">主页</a></li>
+                <li><a href="#">安心宅配</a></li>
+                <li><a href="#">特色预定</a></li>
+                <li><a href="#">卡卷总换</a></li>
+                <li><a href="#">企业定制</a></li>
+                <li><a href="#">活动专享</a></li>
+                <li><a href="#">依谷资讯</a></li>
+                <li><a href="#">依谷扶贫</a></li>
+                <li><a href="#">依谷公益</a></li>
+            </ul>
+        </div>
+        </div>
+    <div class="main">
+        <div class="main_header">
+            <div class="main_magnifier">
+                <div class="main_magnifier_s">
+                    <img src="" alt="">
+                    <div class="main_magnifier_move"></div>
+                    <div class="main_magnifier_big">
+                        <img id="main_magnifier_img" src="" alt="">
+                    </div>
+                </div>
+                <div class="main_magnifier_catalog">
+                    <div></div>
+                    <div class="main_magnifier_box">
+                        <ul style="width: 483px; left: 0">
+                        </ul>
+                    </div>
+                    <div></div>
+                </div>
+            </div>
+            <div class="main_operation">
+                <h3></h3>
+                <div>
+                    <p>价格 <b></b>[￥ <i></i>]</p>
+                    <p>运费 <span>全场满199元包邮，单笔不足运费8元起，生鲜类仅限深圳同城！</span></p>
+                    <p>配送 <select>
+                        <option value ="volvo">全国</option>
+                        </select>
+                    </p>
+                </div>
+                <dl>
+                    <dt>时 效</dt><dd>当日16：00前下单，次日送货上门(仅限深圳同城)！</dd>
+                    <dt>提 示</dt><dd>产品图片及其描述仅作参考，请您以收到的实物为准！</dd>
+                    <dt>理 赔</dt><dd>收货后商品如有损坏，请您当场拍下图片，并保留相关商品，在24小时之内及时联系售后客服，以便我们给您更换完好的商品！如非质量问题，概不退换！</dd>
+                    <dt>规 格</dt>
+                    <dd>
+                        <li style="background: url('img/c-img.png') no-repeat 52px 9px;" id="weight"></li>
+                    </dd>
+                </dl>
+                <div>收藏</div>
+                <div>
+                    <div>
+                        <div id="addIndex"></div>
+                        <div id="reduceIndex"></div>
+                    </div>
+                    <input type="text" value="1" id="number">
+                    <div onclick="joinShop()">加入购物车</div>
+                </div>
+            </div>
+        </div>
+        <div class="main_banner">
+
+        </div>
+        <div class="main_column">
+            <div class="main_columnLeft">
+
+            </div>
+            <div class="main_columnRight">
+                <div class="main_columnRight_menu">
+                    <span style="background: red;color: white">商品介绍</span><span>规格参数</span><span>售后服务</span><span onclick="joinShop()">加入购物车</span>
+                </div>
+                <p class="main_columnRight_first" >
+                </p>
+                <ul class="main_columnRight_second" style="display: none">
+                    <li></li>
+                    <li>产   地：</li>
+                    <li>存   储： 常温阴凉干燥处</li>
+                    <li>保质期：详见包装</li>
+                    <li></li>
+                </ul>
+                <div class="main_columnRight_three" style="display: none">
+                    <ul>
+                        <li><img src="img/详情页/new_slogan_01.png" alt=""><i><b>安全食品</b>官方实名认证</i></li>
+                        <li><img src="img/详情页/new_slogan_02.png" alt=""><i><b>基地直供</b>食材最短供应链</i></li>
+                        <li><img src="img/详情页/new_slogan_03.png" alt=""><i><b>全程冷链</b>食材新鲜不流失</i></li>
+                        <li><img src="img/详情页/new_slogan_04.png" alt=""><i><b>双重检测</b>确保食材安全</i></li>
+                        <li><img src="img/详情页/new_slogan_05.png" alt=""><i><b>五星服务</b>购物更省心省事</i></li>
+                    </ul>
+                    <b>商品退换货</b>
+                    <p>1、客户在收到商品后可享受“7日内无理由退货”，已标示不允许退货和鲜活易腐商品除外。</p>
+                    <p>2、因产品质量问题发生退换货时，所换商品将在约定的时间重新配送，免收物流费。</p>
+                    <p>3、因客户保存不善造成的商品损坏，我们将不予退换。</p>
+                    <p>4、如商品存在质量问题，请保留质量物品原物，依谷验货人员将在接到投诉后12小时内上门验货。您也可以登陆依谷网在会员管理处向依谷客服人员投诉，并上传质量问题图片。</p>
+                    <p>5、客户在收到商品（仅限干货类商品）48小时之内如需换货，请与依谷网客服联系，我们将在接收您的退换货请求24小时内处理，此类退换只限于没有被使用，且不损坏包装、不影响二次销售的商品，退换货所发生的路费/运费将由客户承担。</p>
+                    <p>6、水果类商品不能以外观瑕疵、个人口感为由提出退换，如因其它品质问题退货，则需提出退货理由并填写商品拒收单给送货员，所退货品交由送货员带回。您或您的委托收货人的签字表示您对商品质量及数量无异议，依谷网有权不接受以此为由的退换货。</p>
+                    <p>7、网上产品销售图片及信息仅供参照，因拍摄灯光及不同显示器色差等问题可能造成商品图片与实物有一定色差，一切以实物为准。 依谷网不接受以此为由的退换货。</p>
+                    <p>8、发生退货后，请联系我们的客服，经客服工作人员核实后会为您办理退款。我们会将货款24小时内退至您的依谷网个人帐户中，以便于下次订购时使用；对于网银支付或使用支付宝支付的客户如需将款项退至原支付账户，将在申请退款后7日内到账。</p>
+                    <p>以上规则最终解释权由依谷网所有。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="rightShop">
+        <div>
+            <div class="rightShop_center">
+                <a href="#" class="rightShop_personal">
+                    <i></i>
+                    <div class="rightShop_tooltip">
+                        个人中心
+                        <div></div>
+                    </div>
+                <a href="shopping.html" class="rightShop_shopping"><i></i><div>购物车</div><i class="rightShop_shoppingPt2">0</i>
+                <a href="#" class="rightShop_history">
+                    <i></i>
+                    <div class="rightShop_tooltip">
+                        我的足迹
+                        <div></div>
+                    </div>
+                </a>
+                <a href="#" class="rightShop_collection default">
+                    <i></i>
+                    <div class="rightShop_tooltip">
+                        我的收藏
+                        <div></div>
+                    </div>
+                </a>
+            </div>
+            <div class="rightShop_bottom">
+                <a href="#" class="rightShop_customer default">
+                    <i></i>
+                    <div class="rightShop_tooltip">
+                        在线客服
+                    </div>
+                </a>
+                <a href="#" class="rightShop_hotline default">
+                    <i></i>
+                    <div class="rightShop_tooltip">
+                        客服热线
+                    </div>
+                </a>
+                <a href="#" class="rightShop_ewm default">
+                    <i></i>
+                    <div>
+                        <div></div>
+                        <img src="img/wx.jpg" alt="">
+                    </div>
+                </a>
+                <a class="rightShop_up default">
+                    <i></i>
+                </a>
+            </div>
+        </div>
+        </div>
+    <div class="footer">
+    <div class="footer_links">
+        <ul>
+            <li>
+                <h3>基地直供 冷链直达</h3>
+                <p>优选蔬果,从基地到餐桌全程冷链直达</p>
+            </li>
+            <li>
+                <h3>同城快递 次日直达</h3>
+                <p>当天16点前下单第二天送达（限深圳同城）</p>
+            </li>
+            <li>
+                <h3>在线支付 灵活便利</h3>
+                <p>多样化支付方式，更便捷 省时省心</p>
+            </li>
+            <li>
+                <h3>退换无忧 服务保障</h3>
+                <p>24小时退换货，流程通畅无阻省时省心</p>
+            </li>
+        </ul>
+    </div>
+    <div class="footer_menu">
+        <ul>
+            <ul>购物指南
+                <a href="#"><li>会员注册</li></a>
+                <a href="#"><li>套餐卡使用方法</li></a>
+                <a href="#"><li>谷穗卡使用方法</li></a>
+            </ul>
+            <ul>付款方式
+                <a href="#"><li>线上支付</li></a>
+                <a href="#"><li>发票说明</li></a>
+                <a href="#"><li>余额支付</li></a>
+            </ul>
+            <ul>商品配送
+                <a href="#"><li>买家自取</li></a>
+                <a href="#"><li>配送时间</li></a>
+                <a href="#"><li>冷链配送</li></a>
+                <a href="#"><li>送货范围及费用</li></a>
+            </ul>
+            <ul>售后服务
+                <a href="#"><li>签收与评价</li></a>
+                <a href="#"><li>常见问题</li></a>
+                <a href="#"><li>退换货说明</li></a>
+                <a href="#"><li>品质保障</li></a>
+            </ul>
+            <ul>求真依谷
+                <a href="#"><li>慈善公益</li></a>
+                <a href="#"><li>依谷资讯</li></a>
+                <a href="#"><li>招贤纳士</li></a>
+                <a href="#"><li>关于我们</li></a>
+            </ul>
+        </ul>
+        <div class="footer_wx">
+            <p>依谷微信</p>
+            <img src="img/尾部/index-bottom-ygw-wx.jpg" alt="">
+        </div>
+    </div>
+    <div class="footer_service">
+        <p><span><a href="#">关于依谷</a></span><span><a href="#">加入依谷</a></span><span><a href="#">联系依谷</a></span><span><a
+                href="#">免责声明</a></span><span><a href="#">依谷资讯</a></span><span><a href="#">网站地图</a></span><span><a
+                href="#">客服在线</a></span>
+        </p>
+        <p><a href="#"><img src="img/尾部/dzswsfqy.png" alt="#"></a><a href="#"><img src="img/尾部/kxwz.jpg" alt=""></a><a
+                href="#"><img src="img/尾部/xfwq.jpg" alt=""></a><a
+                href="#"><img src="img/尾部/zmpp.jpg" alt=""></a><a href="#"><img src="img/尾部/spltxkz.png" alt=""></a><a
+                href="#"><img src="img/尾部/govIcon.gif"alt=""></a>
+        </p>
+        <p>Copyright © 2010-2019 所有图片均受著作权保护，未经许可任何单位与个人不得使用、复制、转载、摘编，违者必究法律责任。
+            <a href="#">粤ICP备19014370号-2</a> | All Rights Reserved 深圳依谷网版权所有 网络实名：<a href="#">依谷网</a></p>
+    </div>
+    </div>
+</body>
+<script src="js/方法封装.js"></script>
+<script src="js/购物cookie.js"></script>
+<script>
+    var lis=document.getElementsByClassName("headerBanner")[0].getElementsByTagName("li");
+    Lunbo(lis,5000,document.getElementsByClassName("headerBanner")[0]);
+    // var slipChart=document.getElementsByClassName("chart")[0].getElementsByTagName("li");
+    // var liChart=document.getElementsByClassName("index")[0].getElementsByTagName("li");
+    // var chart=new Lunbo(slipChart,4000,document.getElementsByClassName("slipChart")[0],li);
+    var leftNav=document.getElementById("leftNav");
+    var text;
+    // xml("json/scratch.json",function (t) {
+    //     //nav加载
+    //     text=JSON.parse(t.responseText);
+    //     var leftNavHtml="";
+    //     for (var i in text) {
+    //         leftNavHtml+="<li><h5>"+i+"</h5>";
+    //         for (var j = 0; j < 4; j++) {
+    //             var name=text[i].synopsis[j];
+    //             if(j!=0)name="|"+name;
+    //             leftNavHtml+="<a href='#'>"+name+"</a><div>";
+    //             var content=text[i].content;
+    //             for (var contentKey in content) {
+    //                 leftNavHtml+="<dl><a href='#'><h3>"+contentKey+"</h3><i>></i></a><ul>";
+    //                 for (var k = 0; k < content[contentKey].length; k++) {
+    //                     leftNavHtml+="<li><a href='#'>|&nbsp&nbsp"+content[contentKey][k]+"</a></li>"
+    //                 }
+    //                 leftNavHtml+="</ul></dl>";
+    //             }
+    //             leftNavHtml+="</div>"
+    //         }
+    //         leftNavHtml+="</li>";
+    //     }
+    //     leftNav.innerHTML=leftNavHtml;
+    // });
+    xiaoshiDonhua(document.getElementsByClassName("rightShop_personal")[0]);
+    xiaoshiDonhua(document.getElementsByClassName("rightShop_history")[0]);
+    xiaoshiDonhua(document.getElementsByClassName("rightShop_collection")[0]);
+    xiaoshiDonhua(document.getElementsByClassName("rightShop_customer")[0]);
+    xiaoshiDonhua(document.getElementsByClassName("rightShop_hotline")[0]);
+    function xiaoshiDonhua(Elemt,div) {
+        div=Elemt.lastElementChild;
+        Elemt.onmouseover = function () {
+            div = this.lastElementChild;
+            div.style.display = "block";
+            setTimeout(function () {
+                div.style.left = "-98px";
+            }, 50)
+        };
+        Elemt.onmouseout = function () {
+            div = this.lastElementChild;
+            div.style.display = "none";
+            setTimeout(function () {
+                div.style.left = "";
+            }, 50)
+        };
+    }
+
+    document.getElementById("addIndex").onclick=function(){
+        this.parentNode.nextSibling.nextSibling.value=parseInt(this.parentNode.nextSibling.nextSibling.value)+1;
+    };
+    document.getElementById("reduceIndex").onclick=function(){
+        if(this.parentNode.nextSibling.nextSibling.value<=0){
+            return false;
+        }else{
+            this.parentNode.nextSibling.nextSibling.value=parseInt(this.parentNode.nextSibling.nextSibling.value)-1;
+        }
+    };
+
+    magnifier(document.getElementsByClassName("main_magnifier_s")[0],document.getElementsByClassName("main_magnifier_big")[0],document.getElementsByClassName("main_magnifier_move")[0],document.getElementById("main_magnifier_img"));          //放大镜注册
+    //标签页
+    menu=document.getElementsByClassName("main_columnRight_menu")[0].children;
+    function joinShop() {
+        var on=window.location.href.split("?")[1].split("&")[0].split("=")[1];
+        var obj={
+            "on":on,
+            "num":parseInt(document.getElementById("number").value)
+        };
+        addCookie(obj);
+        document.getElementsByClassName("shopNum")[0].innerHTML=allNumber();
+        document.getElementsByClassName("rightShop_shoppingPt2")[0].innerHTML=allNumber();
+        alert("添加成功")
+    }
+    for (var i = 0; i < 3; i++) {
+        (function (i) {
+            menu[i].onclick=function () {
+                for (var j = 0; j < 3; j++) {
+                    menu[j].style="";
+                    document.getElementsByClassName("main_columnRight")[0].children[j+1].style.display="none";
+                }
+                console.log(document.getElementsByClassName("main_columnRight")[0].children,i);
+                document.getElementsByClassName("main_columnRight")[0].children[i+1].style.display="block";
+                menu[i].style.color="white";
+                menu[i].style.background="red";
+            }
+        })(i);
+    }
+    function onMove(e){
+        document.getElementsByClassName("main_magnifier_s")[0].children[0].src=e.src;
+        document.getElementsByClassName("main_magnifier_big")[0].children[0].src=e.src;
+    }
+    document.getElementsByClassName("main_magnifier_catalog")[0].children[0].onclick=function(){//左进
+        if(!(document.getElementsByClassName("main_magnifier_box")[0].children[0].offsetLeft>=0)){
+            document.getElementsByClassName("main_magnifier_box")[0].children[0].style.left=(document.getElementsByClassName("main_magnifier_box")[0].children[0].offsetLeft+72)+"px";
+        }
+    };
+    document.getElementsByClassName("main_magnifier_catalog")[0].children[2].onclick=function(){//右进
+        console.log(document.getElementsByClassName("main_magnifier_box")[0].children[0].offsetLeft,-document.getElementsByClassName("main_magnifier_box")[0].children[0].scrollWidth+414);
+        if(!(document.getElementsByClassName("main_magnifier_box")[0].children[0].offsetLeft<-document.getElementsByClassName("main_magnifier_box")[0].children[0].scrollWidth+414)){
+            document.getElementsByClassName("main_magnifier_box")[0].children[0].style.left=(document.getElementsByClassName("main_magnifier_box")[0].children[0].offsetLeft-72)+"px";
+        }
+    };
+    xml("json/dataBase.json",function (t) { //上架物品
+        var texts = JSON.parse(t.responseText);
+        var obj=texts[window.location.href.split("?")[1].split("&")[0].split("=")[1]];
+        setPage(window.location.href.split("?")[1].split("&")[0].split("=")[1],obj.name,obj.title,obj.price,obj.original_price,obj.weight,obj.pLength,obj.pts);
+    });
+
+
+    function setPage(on,name,title,price,original_price,weight,ptLength,pts) {
+        var operation=document.getElementsByClassName("main_operation")[0];
+        console.log(document.getElementsByClassName("main_columnRight_first")[0]);
+        operation.children[0].innerHTML=title;
+        operation.children[1].children[0].children[0].innerHTML="￥"+price;
+        operation.children[1].children[0].children[1].innerHTML=original_price;
+        document.getElementById("weight").innerHTML=weight;
+        var ptText="<p class='main_columnRight_first'><div><span>名   称："+name+"</span><span>产   地：</span><span>存   储：常温阴凉干燥处</span><span>保质期：详见包装</span><span>毛   重："+weight+"</span></div>";
+        for (var i = 1; i <= ptLength; i++) {
+            ptText+="<img src='img/商品数据/"+on+"/介绍/"+i+".jpg'>"
+        }
+        ptText+="</p>"
+        document.getElementsByClassName("main_columnRight_first")[0].innerHTML=ptText;
+        document.getElementsByClassName("main_columnRight_second")[0].children[0].innerHTML="名   称： "+name;
+        document.getElementsByClassName("main_columnRight_second")[0].children[4].innerHTML="毛   重："+weight;
+        document.getElementsByClassName("main_magnifier_box")[0].children[0].style.width=72*pts.length+"px";
+        ptText="<li><img src='img/商品数据/"+on+"/cover.jpg' onmousemove='onMove(this)'></li>";
+        document.getElementsByClassName("main_magnifier_s")[0].children[0].src="img/商品数据/"+on+"/cover.jpg";
+        document.getElementById("main_magnifier_img").src="img/商品数据/"+on+"/cover.jpg";
+        for (var i = 0; i < pts.length; i++) {
+            if (pts[i]!=="cover"){
+            ptText+="<li><img src='img/商品数据/"+on+"/"+pts[i]+".jpg' onmousemove='onMove(this)'></li>"
+            }
+        }
+        document.getElementsByClassName("main_magnifier_box")[0].children[0].innerHTML=ptText;
+    }
+    /*
+    购物车数量
+     */
+    document.getElementsByClassName("shopNum")[0].innerHTML=allNumber();
+    document.getElementsByClassName("rightShop_shoppingPt2")[0].innerHTML=allNumber();
+</script>
+</html>

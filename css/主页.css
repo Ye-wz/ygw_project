@@ -1,0 +1,257 @@
+.slipChart{
+    height: 480px;
+}
+.slipChart>div{
+    position: relative;
+    margin: 0 auto;
+}
+.chart{
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+}
+.chart li{
+    height: 480px;
+    width: 100%;
+    position: absolute;
+    display: none;
+}
+.chart>li:nth-child(2){
+    display: block;
+}
+.chart a{
+    display: block;
+    padding-left: 11px;
+}
+.chart img{
+    position: absolute;
+    width: 100%;
+    max-width: 1945px;
+    height: 468px;
+    object-fit: cover;
+}
+.slipChart .index{
+    position: absolute;
+    top: 440px;
+    left: 45%;
+}
+.slipChart .rightBanner{
+    float: right;
+    position: absolute;
+    z-index: 50;
+    left: 76%;
+    top: 0;
+}
+.index li{
+    float: left;
+    margin: 0 5px;
+    width: 34px;
+    height: 10px;
+    background: #000;
+    opacity: 0.2;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.rlChart span{
+    position: relative;
+    padding: 5px 1px;
+    font-size: 25px;
+    background: #aaaaaa;
+    opacity: 0.6;
+    cursor: pointer;
+}
+.rlChart span:hover{
+    opacity: 0.8;
+}
+.rightChart{
+    left: 89%;
+    top: 221px;
+}
+.leftChart{
+    left: 12%;
+    top: 221px;
+}
+.index .click{
+    background: white;
+    opacity: 0.8;
+}
+.content{
+    width: 1200px;
+    margin: 0 auto;
+}
+.content div{
+}
+.content_firstList{
+    width: 100%;
+    display: flex;
+}
+.content_firstList li{
+    flex: 1;
+    float: left;
+}
+.content_firstList li a{
+    margin-left: 10px;
+}
+.content_secondList{
+    margin: 20px auto;
+    display: flex;
+    width: 98%;
+    height: 300px;
+    overflow: hidden;
+}
+.content_secondList>li{
+    flex: 1;
+    border: 1px #555555 solid;
+    border-left: transparent;
+}
+.content_secondList>li img{
+    width: 100%;
+}
+.content_secondList>div{
+    flex: 5;
+    overflow: hidden;
+}
+.content_secondList>div>ul{
+    position: relative;
+    width: 400%;
+    height: 100%;
+    display: flex;
+}
+.secondList_lunbo{
+    position: relative;
+    width: 200%;
+    height: 100%;
+    display: flex;
+}
+.secondList_lunbo li{
+    padding-top: 20px;
+    flex: 1;
+    border: 1px #555555 solid;
+    border-left: transparent;
+    text-align: center;
+}
+.secondList_lunbo li img{
+    width: 95%;
+}
+.secondList_lunbo li span{
+    padding: 20px;
+    height: 20px;
+    display: block;
+    color: #444444;
+    font-size: 14px;
+}
+.secondList_lunbo li a>div{
+    display: flex;
+    margin: 15px auto;
+    height: 9%;
+    width: 80%;
+    border: 1px red solid;
+}
+.secondList_lunboRed{
+    flex: 1;
+    background: red;
+    text-align: center;
+    color: white;
+    font-size: 19px;
+}
+.secondList_lunboWhile{
+    color: #888888;
+    flex: 1;
+    font-size: 19px;
+    text-align: center;
+    text-decoration: line-through;
+}
+.secondList_lunbo li:hover span{
+    color: red;
+}
+.main_header{
+    height: 90px;
+    background: url("../img/首页/bj-tt.png") no-repeat 0 30px;
+}
+.main_header > p {
+    text-align: center;
+}
+.main_header > p span{
+    margin: 0 5px;
+    color: #ff484f;
+}
+.main_header > p span:nth-child(1),.main_header > p span:nth-child(2){
+    color: #2bc837;
+}
+.main_header > h1 {
+    text-align: center;
+}
+.main_content{
+    margin: 0 auto;
+    display: grid;
+    height: 934px;
+    grid-template-rows:304px 629px;
+    grid-template-columns: 1200px;
+    justify-content:center;
+}
+.main_contentHeader{
+    position: relative;
+    background: no-repeat center bottom;
+}
+.main_contentHeader>a{
+    float: right;
+    margin-top: 9px;
+}
+.main_contentHeader ul{
+    width: 170px;
+    position: absolute;
+    top: 130px;
+    left: 15px;
+}
+.main_contentHeader ul li{
+    width: 55px;
+    margin: 15px 20px 0 0;
+    float: left;
+    font-size: 12px;
+    height: 20px;
+    border: 2px solid #959595;
+    line-height: 25px;
+    border-radius: 10px;
+    padding-left: 5px;
+}
+.main_contentHeader ul li a{
+    color: white;
+}
+.main_contentMain{
+    background: no-repeat center bottom;
+    padding-bottom: 45px;
+    display: grid;
+    grid-template-rows:repeat(2,1fr);
+    grid-template-columns: repeat(6,1fr);
+}
+.main_contentMain div{
+    text-align: center;
+    display: block;
+}
+.main_contentMain img{
+    width: 80%;
+}
+.main_contentMain p{
+    display: block;
+    width: 10em;
+    white-space: nowrap;
+    color: #656464;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 5px 10px;
+}
+.main_contentMain a p:nth-child(2):hover{
+    color: red;
+}
+.main_contentMain i{
+    float: right;
+    margin-right: 15px;
+    text-decoration: line-through;
+    font-style: normal;
+}
+.main_contentMain span{
+    margin-left: -50px;
+    color: red;
+    font-size: 20px;
+}
+

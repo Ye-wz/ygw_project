@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/通用样式.css">
+</head>
+<body>
+    <form action="">
+        <div class="box_bj">
+            <img src="img/登录&注册/admin-bg.jpg" alt="">
+        </div>
+    <div class="box">
+        <div>
+            <ul class="myForm">
+                <li><a href="#"><img src="img/登录&注册/logo_login.png" alt=""></a></li>
+                <li><h1>登录</h1><h5>还没有账号?<a href="register.html"> 注册</a></h5></li>
+                <li><img src="img/登录&注册/register_01.png" alt="" class="pt"><input type="text" id="uName" placeholder="手机号/用户名"></li>
+                <li><img src="img/登录&注册/register_02.png" alt="" class="pt"><input type="password" id="paw" placeholder="密码" ></li>
+                <li><h3>验证码</h3><input type="text" id="CAPTCHA"><img src="img/登录&注册/checkimage.action.jpg" alt=""></li>
+                <li class="remember"><div><input type="checkbox" checked="checked"><div id="rememberClick" style="display: block; background: white;"></div></div><h3>记住我</h3><a href="#"><h5>忘记密码?</h5></a></li>
+                <li><a href="#"><div>登录</div></a></li>
+                <li><img src="img/登录&注册/admin-login-san.png" alt=""></li>
+                <li><span><img src="img/登录&注册/login_sina.png" alt=""><img src="img/登录&注册/login_qq.png" alt=""><img src="img/登录&注册/login_dou.png" alt=""></span></li>
+            </ul>
+        </div>
+    </div>
+    </form>
+</body>
+<script>
+    var remember=document.getElementById("rememberClick").parentNode;
+    remember.onclick=function () {
+        if (this.children[0].checked){
+            this.children[0].checked="";
+            this.children[1].style="";
+        }else{
+            this.children[0].checked="checked";
+            this.children[1].style.display="block";
+            this.children[1].style.background="white";
+        }
+    }
+</script>
+</html>

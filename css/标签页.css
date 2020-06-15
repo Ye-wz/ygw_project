@@ -1,0 +1,162 @@
+.navBox div.leftSidebar {
+    height: auto;
+}
+div.navBox{
+    border-bottom: 2px solid red;
+}
+.navMenu > li {
+    font-size: 12px;
+}
+.navMenu li>a:hover {
+    color: #9de47a;
+    cursor: pointer;
+}
+.main{
+    margin: 0 auto;
+    width: 1350px;
+    display: grid;
+    grid-template-columns: 15% 85%;
+}
+.main_left{
+    font-size: 14px;
+}
+.main_leftTitle{
+    font-size: 12px;
+    color: #888888;
+    padding: 8px 0
+}
+.main_leftTitle a{
+    margin: 0 5px;
+    color: #888888;
+}
+.main_leftTitle a:hover{
+    color: red;
+}
+.main_left h1{
+    width: 80%;
+    color: #81c82b;
+    font-weight: 500;
+    font-size: 25px;
+    border-bottom: 1px solid #81c82b;
+}
+.main_left h3{
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 0 10px 15px;
+    background: url("../img/m-jd.png") no-repeat 0 14px;
+    cursor: pointer;
+}
+.main_left>ul{
+    padding: 10px 0;
+
+}
+.main_left>ul>ul{
+    margin-left: 15px;
+    display: none;
+}
+.main_left>ul>ul>li{
+    padding: 5px 0;
+    font-size: 12px;
+    color: #777777;
+}
+.main_right{
+
+}
+.main_rightContentTitle{
+    height: 30px;
+    background: #ededed;
+    font-size: 12px;
+}
+.main_rightContentTitle span{
+    display: inline-block;
+    padding: 7px 12px;
+    cursor: pointer;
+}
+.main_rightContentTitle span:hover{
+    background: #dddddd;
+}
+.main_rightContentTitle i{
+    padding: 7px 12px;
+    float: right;
+    font-style: normal;
+}
+.main_rightContent{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+}
+.main_rightContent>div{
+    height: 400px;
+}
+.main_rightContent>div p.price{
+    color: red;
+    font-size: 30px;
+}
+.main_rightContent>div p.information{
+    padding-left: 55px;
+    font-size: 12px;
+    background: url("../img/ico-crd.png") no-repeat 0 0;
+}
+.main_rightContent>div p.information span,.main_rightContent>div p.information a{
+    margin: 1px 0;
+    color: #888888;
+    display: block;
+}
+p.place span{
+    font-size: 12px;
+    margin: 0 10px;
+    color: #ca38ed;
+}
+p.place span:first-child{
+    margin: 0 5px 0 0;
+    color: red;
+}
+.main_rightContent>div img{
+    width: 95%;
+}
+.main_rightContent>div:hover{
+    border:1px solid #999999;
+}
+.operation{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 25px;
+}
+.operation span:first-child{
+    margin: 1px 0 0 5px;
+    width: 130px;
+    display: grid;
+    grid-template-columns: 25px 70px 25px;
+}
+.operation span:first-child input{
+    height: 25px;
+    text-align: center;
+}
+.operation span:first-child div{
+    border:1px solid #dddddd;
+    cursor: pointer;
+}
+.operation span:first-child div i{
+    margin: 6px auto;
+    display: block;
+    width: 12px;
+    height: 12px;
+    background: url("../img/BuynBtn.png") no-repeat 0 -12px;
+    background-size: 200%;
+}
+.operation span:first-child div:last-child i{
+    background-position: -12px 0;
+}
+.operation span:last-child {
+    color: red;
+    font-size: 12px;
+    display: inline-block;
+    border: 1px solid #eeeeee;
+    padding: 2px 0 2px 32px;
+    margin-right: 43px;
+    background: url("../img/icon-shop.png") no-repeat 2px 4px;
+    cursor: pointer;
+}
+div.main_rightContent > div > p:nth-child(3) > span {
+    height: 16px;
+}

@@ -1,0 +1,320 @@
+.navBox{
+    height: 35px;
+    width: 100%;
+}
+.navBox>div{
+    height: 100%;
+    width: 1200px;
+    margin: 0 auto;
+}
+.navBox .leftSidebar{
+    position: absolute;
+    background: red;
+    width: 200px;
+    height: 503px;
+    z-index: 10;
+}
+.leftSidebar ul#leftNav{
+    position: relative;
+    float: right;
+    padding: 10px 0;
+    width: 99%;
+    height: 448px;
+    display: flex;
+    flex-direction: column;
+    background: white;
+}
+.leftSidebar>ul>li{
+    padding-top: 7px;
+    text-indent: 10px;
+    flex: 1;
+    background: white;
+}
+.leftSidebar>ul>li h5{
+    cursor: pointer;
+    background: url("../img/icon-bsjt.png") no-repeat 185px 5px;
+    background-size: 5px;
+}
+.leftSidebar>ul>li a{
+    padding-left: 8px;
+    font-size: 11px;
+    color: #6f6f6f;
+}
+.leftSidebar>ul>li div{
+    width: 798px;
+    height: 467px;
+    background: white;
+    position: absolute;
+    left: 198px;
+    top: 0;
+    display: none;
+}
+.leftSidebar>ul>li:hover>div{
+    display: block;
+}
+.leftSidebar>ul>li:hover{
+    background: #eeeeee;
+}
+.leftSidebar .leftSidebar_title{
+    height: 35px;
+    line-height: 35px;
+    font-size: 13px;
+    color: white;
+    text-indent: 20px;
+}
+#leftNav>li h3{;
+    color: #555555;
+    display: inline;
+}
+#leftNav>li div>dl{
+    overflow: hidden;
+    position: relative;
+    padding: 5px 0 10px 0;
+}
+#leftNav>li div>dl>a>i{
+    position: absolute;
+    font-weight: bold;
+    font-size: 14px;
+    top: 7px;
+    left: 100px;
+}
+#leftNav>li div>dl:hover{
+    background: #eeeeee;
+}
+#leftNav>li div ul{
+    margin: 0 190px 0 0;
+    padding-bottom: 5px;
+    float: right;
+    width: 490px;
+    display: block;
+    border-bottom:1px dashed #E3E3E3;
+}
+#leftNav>li div li a{
+    padding: 0 10px 0 0;
+    margin: 2px 0;
+    font-size: 12px;
+    float: left;
+}
+#leftNav>li div li a:hover{
+    color: red;
+}
+.navMenu{
+    float: right;
+    height: 100%;
+    width: 750px;
+    margin-right: 225px;
+    display: flex;
+}
+.navMenu>li{
+    flex: 1;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 600;
+    line-height: 35px;
+}
+.navMenu li>a:hover{
+    color: red;
+    cursor: pointer;
+}
+
+
+.rightShop{
+    position: fixed;
+    width: 0;
+    height: 100%;
+    right: 0;
+    top: 0;
+    z-index: 99;
+}
+.rightShop>div{
+    position: fixed;
+    width: 40px;
+    height: 100%;
+    background: #000;
+    right: 0;
+    top: 0;
+}
+.rightShop_center{
+    position: absolute;
+    top: 25%;
+    width: 100%;
+}
+.rightShop_personal{
+    padding-top: 7px;
+    display: block;
+    width: 40px;
+    height: 38px;
+}
+.rightShop_personal i{
+    display: block;
+    margin: 0 auto;
+    width: 25px;
+    height: 30px;
+    background: url("../img/右侧菜单/ibar_sprites.png") 0px 0px;
+    background-size: 65px;
+}
+.rightShop_tooltip{
+    text-align: center;
+    position: relative;
+    line-height: 48px;
+    white-space: nowrap;
+    color: white;
+    width: 98px;
+    height: 46px;
+    background: #000;
+    left: -140px;
+    top: -38px;
+    transition: all 1s ease;
+    display: none;
+}
+.rightShop_tooltip div{
+    position: relative;
+    left: 98px;
+    top: -32px;
+    border: 8px solid transparent;
+    border-left-color: #555555;
+}
+.rightShop_personal:hover{
+    background: #fb7400;
+}
+.rightShop_personal:hover>i{
+    background: url("../img/右侧菜单/ibar_sprites.png") 27px 0px;
+    background-size: 65px;
+}
+.rightShop_shopping{
+    border-top:1px #777777 solid;
+    border-bottom:1px #777777 solid;
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    padding-top: 7px;
+    display: block;
+    width: 40px;
+    height: 120px;
+    line-height: 22px;
+}
+.rightShop_shopping div{
+    display: block;
+    margin-left: 7px;
+    letter-spacing: 9px;
+    line-height: 17px;
+}
+.rightShop_shopping i{
+    margin: 0 auto;
+    display: block;
+    width: 29px;
+    height: 26px;
+    background: url("../img/右侧菜单/ibar_sprites.png") 0 -38px;
+    background-size: 72px;
+}
+i.rightShop_shoppingPt2{
+    margin: 5px auto;
+    text-indent: 1px;
+    font-style: normal;
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #fb7400;
+}
+.rightShop_shopping:hover{
+    background: #fb7400;
+}
+.default {
+    padding-top: 7px;
+    display: block;
+    width: 40px;
+    height: 38px;
+}
+.default i{
+    display: block;
+    margin: 0 auto;
+    width: 25px;
+    height: 30px;
+    background: url("../img/右侧菜单/ibar_sprites.png") 0px 0px;
+    background-size: 65px;
+}
+.rightShop a.default:hover{
+    background: #fb7400;
+}
+.rightShop a.rightShop_history{
+    margin-top: 13px;
+    padding-top: 7px;
+    display: block;
+    width: 40px;
+    height: 38px;
+}
+.rightShop a.rightShop_history i{
+    display: block;
+    margin: 0 auto;
+    width: 25px;
+    height: 30px;
+    background: url("../img/右侧菜单/ibar_sprites.png") 0px -125px;
+    background-size: 65px;
+}
+.rightShop_history:hover{
+    background: #fb7400;
+}
+.rightShop_history:hover>i{
+    background: url("../img/右侧菜单/ibar_sprites.png") 27px -125px;
+    background-size: 65px;
+}
+.rightShop a.rightShop_collection>i{
+    background-position: 0 -90px;
+}
+.rightShop_bottom{
+    position: absolute;
+    left: 0;
+    z-index: 0;
+    bottom: 0;
+    width: 100%;
+}
+.rightShop_bottom .rightShop_customer i{
+    background: url("../img/右侧菜单/kf.png") no-repeat;
+}
+.rightShop_hotline i{
+    background-position: 0 -197px;
+}
+.rightShop_ewm i{
+    background-position: 1px 161px;
+}
+.rightShop_ewm>div{
+    padding: 5px;
+    position: absolute;
+    width: 165px;
+    top: -79px;
+    left: -175px;
+    z-index: 100;
+    height: 200px;
+    background: white;
+    display: none;
+}
+.rightShop_ewm>div>div{
+    width: 0;
+    height: 0;
+    position: absolute;
+    border:5px solid transparent;
+    border-left:5px solid white;
+    left: 175px;
+    top: 184px;
+}
+.rightShop_ewm div img{
+    width: 100%;
+}
+.rightShop_ewm:hover>div{
+    display: block;
+}
+.rightShop_up{
+    display: none;
+}
+.rightShop_up i{
+    background-position: 0 -228px;
+}
+div.ewmBox {
+    display: inline-block;
+    width: 77px;
+    text-align: center;
+    font-size: 12px;
+    color: #8a8a8a;
+    letter-spacing: 0.175em;
+}

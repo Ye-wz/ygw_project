@@ -1,0 +1,120 @@
+.pt{
+    position: fixed;
+    z-index: -99;
+}
+h1{
+    font-size: 40px;
+    font-weight: 500;
+    display: inline;
+}
+li{
+    margin: 10px 0;
+}
+.pt img{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+}
+.box{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    width: 530px;
+    height: 550px;
+    background: white;
+    margin-left: -295px;
+    margin-top: -300px;
+    padding: 25px 30px 60px;
+}
+.myFrom > li input{
+    font-size: 16px;
+    color: #858585;
+}
+.myFrom > li:nth-child(2) > span {
+    float: right;
+    margin-top: 25px;
+}
+.myFrom > li:nth-child(2) > span a {
+    color: #ee6f12;
+}
+.myFrom > li:nth-child(3){
+    height: 300px;
+    display: grid;
+    grid-template-rows: repeat(4,53px 25px);
+}
+.myFrom > li:nth-child(3)>div:nth-child(odd){
+    display: grid;
+    grid-template-columns: 55px auto 74px;
+}
+.myFrom > li:nth-child(3) div img{
+    padding: 15px;
+    background: #b0b0b0;
+}
+.myFrom > li:nth-child(3)>div:nth-child(3){
+    grid-template-columns: 55px 230px 10px 130px auto;
+    grid-template-areas: 'a b . c .';
+    overflow: hidden;
+}
+.myFrom > li:nth-child(3) div:nth-child(3) div{
+    font-size: 20px;
+    color: white;
+    padding: 12px 15px;
+    grid-area: c;
+    background: #ed9008;
+    justify-self: center;
+    cursor: pointer;
+    display: block;
+}
+.remember {
+    height: 35px;
+    line-height: 1.6;
+}
+.remember > div {
+    height: 25px;
+    width: 25px;
+    border: 1px solid #9d9d9d;
+    display: inline-block;
+    cursor: pointer;
+}
+.remember >h5 {
+    position: relative;
+    top: -7px;
+    display: inline;
+    font-size: 18px;
+    line-height: 0;
+}
+.remember >h5 a{
+    text-decoration: underline;
+}
+.remember > div:nth-child(1) > div:nth-child(2) {
+    width: 100%;
+    height: 100%;
+    background: #353535;
+    clip-path: polygon(44.86% 64%, 86% 20%, 100% 34.31%, 40.86% 88%, 11.14% 72.00%, 28% 52%);
+}
+.remember > div > input {
+    display: none;
+}
+.myFrom > li:nth-child(5) {
+    cursor: pointer;
+}
+.fromWrite>div:nth-child(even){
+    color: #c6c6c6;
+    text-indent: 2em;
+    background: url("../img/登录&注册/login_error.png") no-repeat 5px 0;
+    visibility: hidden;
+}
+.fromWrite>div:nth-child(odd)>div{
+    background: url("../img/登录&注册/login_right.png")no-repeat 10px 10px;
+    display: none;
+}
+.myFrom input[type=submit]{
+    background: #ff8300;
+    margin-bottom: 0;
+    padding: 16px 249px;
+    border: 0;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+

@@ -1,0 +1,126 @@
+.box_bj{
+    position: fixed;
+}
+h3{
+    color: white;
+    display: initial;
+    font-size: 15px;
+}
+h1{
+    color: white;
+    display: inline;
+    font-weight: 500;
+}
+h5{
+    color: white;
+    font-weight: 500;
+    font-size: 13px;
+}
+.box li{
+    width: 407px;
+    margin: 7px 0;
+}
+.box_bj img{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+.box{
+    width: 30%;
+    margin: 0 auto;
+}
+.box>div{
+    background: rgba(74, 73, 73, 0.41);
+    width: 407px;
+    height: 60%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 25px 50px;
+}
+.myForm > li:nth-child(2) > h5:nth-child(2) {
+    float: right;
+    margin-top: 20px;
+}
+.pt{
+    padding: 13px 14px;
+    background: #b5b5b5;
+}
+input[type="text"],input[type="password"]{
+    width: 350px;
+    height: 46px;
+    font-size: 20px;
+    line-height: 29px;
+    display: block;
+    float: right;
+}
+#paw{
+    height: 47px;
+}
+.myForm > li:nth-child(4) > img {
+    padding-bottom: 12px;
+}
+.myForm > li:nth-child(5) > h3 {
+    line-height: 1.4;
+    padding-right: 8px;
+}
+#CAPTCHA {
+    width: 38%;
+    float: unset;
+    display: inline;
+    border: 0;
+    height: 45px;
+}
+.myForm > li:nth-child(5) > img:nth-child(3) {
+    height: 45px;
+    float: right;
+}
+.remember {
+    height: 35px;
+    margin-top: 35px;
+    line-height: 1.6;
+}
+.remember > div {
+    height: 25px;
+    width: 25px;
+    border: 1px solid white;
+    display: inline-block;
+    cursor: pointer;
+}
+.remember > a:nth-child(3)>h5 {
+    float: right;
+    line-height: 54px;
+}
+.myForm > li:nth-child(2) > h5:nth-child(2) > a {
+    color: #df6d1a;
+}
+.myForm > li:nth-child(7) >a div {
+    background: #c85a0b;
+    text-align: center;
+    display: inline;
+    padding: 15px 185px;
+}
+.myForm > li:nth-child(8) > img {
+    width: 330px;
+    margin-top: 7px;
+}
+.myForm > li:nth-child(9) {
+    text-align: center;
+}
+.remember > div > input {
+    display: none;
+}
+.remember > div:nth-child(1) > div:nth-child(2) {
+    width: 100%;
+    height: 100%;
+    background: white;
+    clip-path: polygon(44.86% 64%, 86% 20%, 100% 34.31%, 40.86% 88%, 11.14% 72.00%, 28% 52%);
+    display: none;
+}
+.remember > div:hover>div:nth-child(2){
+    background: #b0b0b0;
+    display: block;
+}
+.myForm > li:nth-child(7) > a:nth-child(1) {
+    display: inline-block;
+}

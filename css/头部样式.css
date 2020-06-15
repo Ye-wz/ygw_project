@@ -1,0 +1,196 @@
+.header{
+    height: 17px;
+    margin: 6px ;
+}
+.headerBox{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.header #welcome{
+    float: left;
+    font-size: 12px;
+    line-height: 20px;
+}
+#welcome span{
+    color: #aaaaaa;
+}
+#welcome a{
+    color: #555555;
+    background: url("../img/icon-xx.png") no-repeat;
+    text-indent: 2em;
+}
+#welcome>a,welcome>span,welcome>img{
+    margin: 0 5px;
+}
+.user{
+    box-sizing: border-box;
+    font-size: 12px;
+    float: right;
+    line-height: 200%;
+}
+.user a,.user span{
+    margin: 5px;
+}
+.user a{
+    color: green;
+}
+.user a.user_go{
+    color: #666666;
+}
+.user span{
+    position: relative;
+    color: #888888;
+}
+.user span img:last-child{
+    z-index: 10;
+    position: absolute;
+    left: -121px;
+    display: none;
+}
+.user span:hover>img:last-child{
+    display: block;
+}
+.user .user_go:hover{
+    color: red;
+}
+
+.headerBanner{
+    height: 110px;
+}
+.headerBanner>div{
+    margin: 0 auto;
+    position: relative;
+}
+.headerBanner>div li{
+    position: absolute;
+    left: 0;
+    display: none;
+}
+.headerBanner>div li img{
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.searchTopBox{
+    height: 94px;
+}
+.searchTopBox div{
+    margin: 15px auto 0 auto;
+    width: 1200px;
+}
+.searchTopBox #logo{
+    float: left;
+    width: 330px;
+}
+.searchTopBox div.searchBox{
+    float: left;
+    height: 50px;
+    width: 520px;
+}
+.searchTopBox input{
+    float: left;
+    height: 28px;
+    width: 440px;
+    color: #888888;
+}
+.searchTopBox #searchButton{
+    float: left;
+    background-color: red;
+    width: 75px;
+    height: 29px;
+    color: wheat;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+}
+.searchTopBox .searchBox p{
+    float: left;
+    display: flex;
+    font-size: 12px;
+    margin: 5px 0;
+    text-align: center;
+    width: 100%;
+}
+.searchTopBox .searchBox p a{
+    flex: 1;
+    color: #666666;
+    white-space: nowrap;
+}
+.searchTopBox .searchBox p a:hover{
+    color: red;
+}
+.searchTopBox .shopBox{
+    position: relative;
+    float: left;
+    background: #fbfbfb;
+    height: 17px;
+    width: 120px;
+    padding: 10px;
+    margin: 22px 0 0 121px;
+}
+.searchTopBox .shopBox span.shopNum{
+    position: absolute;
+    font-size: 10px;
+    width: 10px;
+    height: 10px;
+    color: white;
+    background: red;
+    border-radius: 50%;
+    text-align: center;
+    top: 3px;
+    left: 6px;
+}
+.searchTopBox .shopBox img{
+    float: left;
+}
+.searchTopBox .shopBox span:last-child{
+    float: left;
+    font-size: 13px;
+    color: #444444;
+    white-space: nowrap;
+    cursor: pointer;
+}
+.searchTopBox .shopBox span:last-child:hover{
+    margin: 0;
+    color: red;
+}
+.footer_wx{
+    float: left;
+    width: 73px;
+    height: 50px;
+    text-align: center;
+    font-size: 12px;
+    color: #777777;
+    letter-spacing: 3px;
+}
+.footer_service {
+    margin: 0 auto;
+}
+.footer_service>p>span>a {
+     color: #606060;
+}
+.footer_service>p>a>img {
+      height: 100%;
+}
+.footer_service > p:nth-child(1) > span:nth-child(1) {
+    border: none;
+}
+.footer_service > p:nth-child(2) {
+    height: 50px;
+    margin-top: 10px
+}
+.footer_service > p:nth-child(2)>a{
+    margin: 0 6px;
+}
+.footer_service > p:nth-child(3) {
+    width: 740px;
+    font-size: 13px;
+    color: #848484;
+    margin-top: 15px;
+}
+
+
+

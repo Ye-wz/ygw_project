@@ -1,0 +1,291 @@
+.navBox div.leftSidebar {
+    height: auto;
+ }
+div.navBox{
+    border-bottom: 2px solid red;
+}
+div.ewmBox {
+    width: 74px;
+    position: absolute;
+    left: 1550px;
+    text-align: center;
+}
+.ewmBox > span:nth-child(2) {
+    display: block;
+    margin: 0 auto;
+}
+.main{
+    width: 1350px;
+    margin: 75px auto;
+}
+.main_header{
+    height: 600px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 500px auto 150px;
+}
+.main_magnifier {
+    height: 500px;
+    width: 450px;
+}
+.main_magnifier img{
+    height: 100%;
+}
+.main_magnifier_s{
+    position: relative;
+    height: 450px;
+    width: 450px;
+    border: 1px solid gainsboro;
+}
+.main_magnifier_move{
+    height: 225px;
+    width: 225px;
+    position: absolute;
+    top:0;
+    left: 0;
+    border: 1px solid black;
+    cursor: move;
+    display: none;
+}
+.main_magnifier_big{
+    height: 300px;
+    width: 300px;
+    border: 1px solid black;
+    position: absolute;
+    left: 450px;
+    top: 0;
+    overflow: hidden;
+    display: none;
+}
+.main_magnifier_big img{
+    height: 600px;
+    width: 600px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.main_magnifier_catalog{
+    width: 450px;
+    display: grid;
+    grid-template-columns: auto 354px auto;
+    grid-row-gap: 5px;
+    height: 70px;
+}
+.main_magnifier_catalog div:first-child,.main_magnifier_catalog div:last-child{
+    width: auto;
+    background: url("../img/arrow-btn.png") no-repeat 6px 5px;
+    cursor: pointer;
+}
+.main_magnifier_catalog div:last-child{
+    background-position: -55px 5px;
+}
+.main_operation{
+    margin-left: 50px;
+    padding-top: 20px;
+    padding-right: 111px;
+}
+.main_operation h3{
+}
+.main_operation>div:nth-child(2){
+    margin-top: 20px;
+    color: #808080;
+    background: #f9f9f9;
+    padding: 10px 20px;
+    line-height: 40px;
+}
+.main_operation div:nth-child(2) p>b{
+    font-size: 35px;margin: 0 10px;
+    color: red;
+}
+.main_operation div:nth-child(2) p i {
+    font-style: normal;
+    text-decoration:line-through;
+}
+.main_operation div:nth-child(2) p>span{
+    background: url("../img/icon-zy.png") no-repeat 0 1px;
+    padding-left: 46px;
+    margin-left: 10px;
+    color: black;
+    font-size: 14px;
+}
+.main_operation div:nth-child(2)>p>select{
+    margin-left: 10px;
+    background: #e6e4e4;
+    color: #666666;
+    padding: 3px;
+    border: 0;
+}
+.main_operation dl{
+    font-size: 12px;
+    color: #8b8b8b;
+    padding: 2px 15px;
+}
+.main_operation dl dd{
+    font-style: normal;
+    display: inline-table;
+    width: 430px;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+.main_operation dl dt{
+    background: red;
+    color: white;
+    display: inline-table;
+    text-align: center;
+    width: 50px;
+}
+.main_operation > dl:nth-child(3) > dt:nth-child(7) {
+    background: #eee9;
+    color: black;
+    font-size: 14px;
+}
+.main_operation > dl:nth-child(3) > dd:nth-child(8) {
+    margin: 50px 10px;
+}
+.main_operation > dl:nth-child(3) > dd:nth-child(8) > li {
+    border: 1px solid #ddd;
+    width: 60px;
+    text-align: center;
+    height: 18px;
+    line-height: 18px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+.main_operation > div:nth-child(4) {
+    font-size: 13px;
+    color: #6c6a6a99;
+    width: 28px;
+    padding: 15px 15px 15px 30px;
+    background: url("../img/icon-fx.png") no-repeat 0 12px;
+    float: left;
+    cursor: pointer;
+}
+.main_operation > div:nth-child(5) {
+    height: 40px;
+    width: 220px;
+    float: right;
+    display: grid;
+    grid-template-columns: 20px 50px auto;
+    text-align: center;
+}
+.main_operation > div:nth-child(5) > div:nth-child(1)>div{
+    background: #d5d5d5 url("../img/BuynBtn00.png") no-repeat 0 0;
+    height: 20px;
+    border: 1px solid;
+    cursor: pointer;
+}
+.main_operation > div:nth-child(5) > div:nth-child(1)>div:nth-child(2){
+    background-position: 0 -21px;
+}
+.main_operation > div:nth-child(5) > input {
+    text-align: center;
+    font-size: 16px;
+}
+.main_operation > div:nth-child(5) > div:nth-child(3){
+    background: #fb4646;
+    color: white;
+    padding: 11px;
+    cursor: pointer;
+}
+.main_column{
+    border-top: 2px solid red;
+    width: 1350px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 17% 83%;
+}
+.main_columnRight_menu{
+    background: #e9e9e9;
+}
+.main_columnRight_menu span{
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 18px;
+    cursor: pointer;
+    color: #666666;
+}
+.main_columnRight_menu span:hover{
+    color: white;
+    background: red;
+}
+.main_columnRight_menu span:last-child{
+    background: red;
+    color: white;
+    float: right;
+    font-size: 16px;
+    padding: 11px 15px;
+}
+.main_columnRight_first{
+    text-align: center;
+}
+.main_columnRight_first>div{
+    border-bottom: 1px solid;
+    text-align: left;
+}
+.main_columnRight_first >div span{
+    display: inline-block;
+    width: 33.3%;
+    text-indent: 2em;
+    color: #666666;
+    font-size: 14px;
+}
+.main_columnRight_first > div:nth-child(2) {
+    line-height: 40px;
+    text-indent: 0;
+}
+.main_columnRight_second{
+    padding: 10px 0;
+}
+.main_columnRight_second>li{
+    width: 100%;
+    text-indent: 5em;
+    color: #666666;
+    font-size: 14px;
+    line-height: 40px;
+}
+.main_columnRight_three>ul{
+    border-bottom: 1px solid #aaaaaa;
+}
+.main_columnRight_three li{
+    display: flex;
+    align-items: center;
+}
+.main_columnRight_three i{
+    display: inline-block;
+    height: 13px;
+}
+.main_columnRight_three i>b{
+    margin: 0 5px;
+}
+.main_magnifier_box {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+}
+.main_magnifier_box>ul{
+    position: absolute;
+    height: 70px;
+    transition: all 0.5s ease;
+}
+.main_magnifier_box>ul>li{
+    height: 59px;
+    padding: 5px;
+    float: left;
+
+}
+div.main_magnifier_box>ul>li{
+    border: 1px solid transparent;
+}
+.main_magnifier_box>ul>li img:hover{
+    border: 1px solid red;
+}
+.main_columnRight_first:nth-child(2) > img{
+    margin-top: -4px;
+    border: 0;
+}
+p.main_columnRight_first:nth-child(2) > img:nth-child(3) {
+    margin: 0;
+}
+
+
+

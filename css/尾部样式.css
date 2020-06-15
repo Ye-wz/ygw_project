@@ -1,0 +1,102 @@
+.footer{
+    margin: 0 auto;
+}
+.footer_links{
+    width: 100%;
+    background: #cccccc;
+    height: 108px;
+}
+.footer_links ul{
+    margin: 0 auto;
+    width: 1200px;
+}
+.footer_links ul li{
+    margin: 13px 30px;
+    height: 100%;
+    width: 160px;
+    padding: 0 0 0 80px;
+    float: left;
+    background: url("../img/尾部/icon-xian.png") no-repeat;
+    background-size: 75px;
+    color: #333333;
+}
+.footer_links ul li:nth-child(2){
+    background-image: url("../img/尾部/icon-kuai.png");
+}
+.footer_links ul li:nth-child(3){
+    background-image: url("../img/尾部/icon-fu.png");
+}
+.footer_links ul li:nth-child(4){
+    background-image: url("../img/尾部/icon-tui.png");
+}
+.footer_links ul li h3{
+    margin-bottom: 10px;
+}
+.footer_menu{
+    padding-top: 40px;
+    margin: 0 auto;
+    width: 1200px;
+    height: 200px;
+    border-bottom: 1px #ddd solid;
+}
+.footer_menu>ul>ul{
+    font-weight: 700;
+    padding-left: 35px;
+    margin: 0 40px;
+    float: left;
+    background: url("../img/icon-shop.png") no-repeat;
+}
+.footer_menu>ul>ul:nth-child(2){
+    background-image: url("../img/尾部/icon-fw2.png");
+}
+.footer_menu>ul>ul:nth-child(3){
+    background-image: url("../img/尾部/icon-fw3.png");
+}
+.footer_menu>ul>ul:nth-child(4){
+    background-image: url("../img/尾部/icon-fw4.png");
+}
+.footer_menu>ul>ul:nth-child(5){
+    background-image: url("../img/尾部/icon-fw5.png");
+    background-size: 25px;
+}
+.footer_menu>ul>ul li{
+    font-weight: 500;
+    font-size: 13px;
+    color: #444444;
+    margin: 10px 0;
+}
+.footer_menu>ul>ul li:hover{
+    color: red;
+}
+.footer_wx{
+    width: 100px;
+    float: right;
+    text-align: center;
+    margin-right: 80px;
+    line-height: 1.6;
+    font-size: 17px;
+    font-weight: 600;
+}
+.footer_service {
+     width: 1200px;
+ }
+.footer_service p{
+    margin: 0 auto;
+    text-align: center;
+}
+.footer_service > p:nth-child(1) {
+    font-size: 11px;
+    letter-spacing: 0em;
+    padding-top: 15px;
+}
+.footer_service > p span {
+    padding: 0 20px;
+    border-left: 1px solid #ccc;
+}
+.footer_service > p span:hover>a{
+    color: red;
+}
+.footer_service {
+    background: #f9f9f9;
+}
+

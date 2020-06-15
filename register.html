@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册页面</title>
+    <link rel="stylesheet" href="css/通用样式.css">
+    <link rel="stylesheet" href="css/注册样式.css">
+</head>
+<body>
+<form action="login.html">
+    <div class="box">
+        <ul class="myFrom">
+            <li><img src="img/登录&注册/logo_login.png" alt=""></li>
+            <li><h1>注册</h1><span>已有账号<a href="login.html">登录</a></span></li>
+            <li class="fromWrite">
+                <div id="phone"><img src="img/登录&注册/register_04.png" alt=""><input type="text" placeholder="请输入手机号" name="phone"><div></div></div>
+                <div>请输入正确的手机号码</div>
+                <div><img src="img/登录&注册/register_05.png" alt=""><input type="text" placeholder="请输入短信验证码"><div>发送验证码</div></div>
+                <div></div>
+                <div id="pas"><img src="img/登录&注册/register_02.png" alt=""><input type="password" placeholder="请输入密码" name="pwd"><div></div></div>
+                <div>密码为6-16位的数字，字母或下划线组成</div>
+                <div id="pasConfirm"><img src="img/登录&注册/register_02.png" alt=""><input type="password" placeholder="请输入确认密码"><div></div></div>
+                <div>两次密码输入不一致，请重新输入</div>
+            </li>
+            <li class="remember"><div ><input type="checkbox" checked="checked"><div id="rememberClick" style="display: block"></div></div><h5>同意<a href="#">依谷网服务协议</a></h5></li>
+            <input type="submit" value="完成" id="submit">
+        </ul>
+    </div>
+    <div class="pt">
+        <img src="img/登录&注册/admin-re-bg.jpg" alt="">
+    </div>
+</form>
+</body>
+<script src="js/方法封装.js"></script>
+<script src="js/购物cookie.js"></script>
+<script>
+    var remember=document.getElementById("rememberClick").parentNode;
+    var form=document.getElementsByTagName("form")[0];
+    remember.onclick=function () {
+        if (!this.children[0].checked){
+            this.children[0].checked="checked";
+            this.children[1].style.display="block";
+        }else{
+            this.children[0].checked="";
+            this.children[1].style.display="none";
+        }
+    };
+    document.getElementById("phone").getElementsByTagName("input")[0].onblur=function () {
+        this.nextSibling.style.display="block";
+        if(hasPhone(this)){
+            this.nextSibling.style.backgroundPositionY="8px";
+            document.getElementById("phone").nextSibling.nextSibling.style.visibility="hidden";
+            return true;
+        }else{
+            document.getElementById("phone").nextSibling.nextSibling.style.visibility="unset";
+            this.nextSibling.style.backgroundPositionY="-34px";
+        }
+    };
+    document.getElementById("pas").getElementsByTagName("input")[0].onblur=function () {
+        this.nextSibling.style.display="block";
+        if(hasPas(this)){
+            this.nextSibling.style.backgroundPositionY="9px";
+            document.getElementById("pas").nextSibling.nextSibling.style.visibility="hidden";
+            return true;
+        }else{
+            document.getElementById("pas").nextSibling.nextSibling.style.visibility="unset";
+            this.nextSibling.style.backgroundPositionY="-34px";
+        }
+    };
+    document.getElementById("pasConfirm").getElementsByTagName("input")[0].onblur=function () {
+        this.nextSibling.style.display="block";
+        if(this.value===document.getElementById("pas").getElementsByTagName("input")[0].value){
+            this.nextSibling.style.backgroundPositionY="9px";
+            document.getElementById("pasConfirm").nextSibling.nextSibling.style.visibility="hidden";
+            return true;
+        }else{
+            document.getElementById("pasConfirm").nextSibling.nextSibling.style.visibility="unset";
+            this.nextSibling.style.backgroundPositionY="-34px";
+        }
+    };
+    document.getElementById("submit").onclick=function () {
+        var flag=true;
+        if(!document.getElementById("phone").getElementsByTagName("input")[0].onblur()){
+            flag=false;
+        }
+        if(!document.getElementById("pas").getElementsByTagName("input")[0].onblur()){
+            flag=false;
+        }
+        if(!document.getElementById("pasConfirm").getElementsByTagName("input")[0].onblur()){
+            flag=false;
+        }
+        if(!flag)return false;
+        if(!userAddCookie(document.getElementsByName("phone")[0].value,document.getElementsByName("pwd")[0].value)){
+            alert("该用户名已被注册");
+            return false;
+        }
+    };
+</script>
+</html>
